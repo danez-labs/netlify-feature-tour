@@ -55,6 +55,9 @@ import Layout from '../components/layout.astro';
 .docs {
   text-align: center;
 }
+.hidden {
+ visibility: hidden;
+}
 </style>
 
 <Layout
@@ -85,6 +88,15 @@ import Layout from '../components/layout.astro';
       <button type="submit" class="button">
         Send
       </button>
+
+      <p class="hidden">
+    <label>
+      Don’t fill this out if you’re human: <input name="bot-field" />
+    </label>
+    <div data-netlify-recaptcha="true"></div>
+  </p>
+
+
     </form>
     <p class="docs">
       <a href="https://docs.netlify.com/forms/setup/">
