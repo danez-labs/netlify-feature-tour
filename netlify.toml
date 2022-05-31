@@ -1,3 +1,2 @@
 [context.branch-deploy]
-  command = "env"
   environment = { NODE_ENV = "production" }
