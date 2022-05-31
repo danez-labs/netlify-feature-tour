@@ -1,2 +1,5 @@
-[context.branch-deploy.environment]
-  NODE_ENV = "development"
+[context.branch-deploy]
+  command = "env"
+  environment = {
+    NODE_ENV = "development"
+  }
