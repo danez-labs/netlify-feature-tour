@@ -9,6 +9,7 @@
     "preview": "astro preview"
   },
   "devDependencies": {
-    "astro": "^0.20.7"
+    "astro": "^0.20.7",
+    "netlify-cli": "^10.3.1"
   }
 }
