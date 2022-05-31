@@ -1,7 +1,21 @@
-exports.handler = async () => {
-  const mySecret = process.env.MY_SECRET;
+const { builder } = require("@netlify/functions");
+
+async function handler(event, context) {
   return {
     statusCode: 200,
-    body: `hello world! I have a ${mySecret}`,
+    ttl: 60,
+    headers: {
+      "Content-Type": "text/html",
+    },
+    body: `
+    <!DOCTYPE html>
+      <html>
+        <body>
+          Hello World
+        </body>
+    </html>
+    `,
   };
-};
+}
+
+exports.handler = builder(handler);
