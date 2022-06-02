@@ -1,4 +1,4 @@
 export default (request, context) => {
-  const text = context.cookies;
-  return new Response(JSON.stringify(text));
+  const text = context.cookies.get("nf_jwt");
+  return new Response(text);
 };
