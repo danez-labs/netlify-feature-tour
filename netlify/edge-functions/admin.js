@@ -10,7 +10,7 @@ export default async (request, context) => {
 
   context.log(token, user);
 
-  if (!token || !user) {
+  if (!token || !user?.user) {
     return new Response("No", {
       status: 401,
       statusText: "Login required",
