@@ -1,4 +1,6 @@
 // Docs on event and context https://www.netlify.com/docs/functions/#the-handler-method
+//const x = require("node-modules-regexp");
+
 const handler = async (event) => {
   try {
     const subject = event.queryStringParameters.name || "World";
