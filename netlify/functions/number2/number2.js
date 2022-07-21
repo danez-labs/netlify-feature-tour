@@ -1,5 +1,5 @@
 // Docs on event and context https://www.netlify.com/docs/functions/#the-handler-method
-//const x = require("node-modules-regexp");
+const x = require("path");
 
 const handler = async (event) => {
   try {
@@ -12,6 +12,7 @@ const handler = async (event) => {
       // isBase64Encoded: true,
     };
   } catch (error) {
+    console.log(x);
     return { statusCode: 500, body: error.toString() };
   }
 };
