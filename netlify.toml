@@ -1,9 +1,6 @@
 [build.environment]
 LALA = "LULU"
 
-[functions.schedule]
-schedule = "@hourly"
-
 [[edge_functions]]
 path = "/hello"
 function = "hello"
