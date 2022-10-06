@@ -21,3 +21,6 @@ function = "login"
 [[edge_functions]]
 function = "env"
 path = "/env"
+
+[[plugins]]
+package = "@netlify/netlify-plugin-functions-bundling-config"
