@@ -17,6 +17,9 @@ function = "admin"
 path = "/login"
 function = "login"
 
+[[edge_functions]]
+path = "/error"
+function = "error"
 
 [[edge_functions]]
 function = "env"
