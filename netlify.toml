@@ -25,5 +25,7 @@ function = "error"
 function = "env"
 path = "/env"
 
-[[plugins]]
-package = "@netlify/netlify-plugin-functions-bundling-config"
+
+[functions]
+
+node_bundler = 'nft'
