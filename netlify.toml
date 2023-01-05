@@ -26,6 +26,3 @@ function = "env"
 path = "/env"
 
 
-[functions]
-
-node_bundler = 'nft'
