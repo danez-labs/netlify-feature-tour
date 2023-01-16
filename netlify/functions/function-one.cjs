@@ -1,1 +1,1 @@
-module.export.handler = () => {};
+module.exports.handler = () => {};
