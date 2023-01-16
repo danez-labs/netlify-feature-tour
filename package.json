@@ -9,7 +9,7 @@
     "preview": "astro preview"
   },
   "devDependencies": {
-    "@netlify/netlify-plugin-functions-bundling-config": "^2.0.0",
+    "@netlify/netlify-plugin-functions-bundling-config": "2.1.0",
     "astro": "^0.20.7"
   },
   "dependencies": {
