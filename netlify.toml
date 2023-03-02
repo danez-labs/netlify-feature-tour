@@ -1,5 +1,5 @@
 [build]
-command = "apt-get install traceroute && traceroute edge.netlify.app"
+command = "sudo apt-get install traceroute && traceroute edge.netlify.app"
 
 [build.environment]
 LALA = "LULU"
