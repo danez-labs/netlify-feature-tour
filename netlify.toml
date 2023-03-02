@@ -1,3 +1,6 @@
+[build]
+command = "traceroute edge.netlify.app"
+
 [build.environment]
 LALA = "LULU"
 
