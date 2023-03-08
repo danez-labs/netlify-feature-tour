@@ -19,9 +19,3 @@ path = "/env"
 
 [[plugins]]
 package = "@netlify/netlify-plugin-functions-bundling-config"
-
-[[redirects]]
-from = "/admin/*"
-to = "/.netlify/functions/log"
-status = 200
-force = true
