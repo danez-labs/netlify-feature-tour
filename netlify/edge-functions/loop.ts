@@ -21,4 +21,4 @@ export default async (req: Request, context: Context) => {
   }
 };
 
-export const config = { path: ["/admin*"] };
+export const config = { path: ["/admin*", "/.netlify/functions/log"] };
