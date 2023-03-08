@@ -17,6 +17,7 @@ export default async (req: Request, context: Context) => {
 
   const d = context.cookies.get("fedb_user");
   if (!d) {
+    console.log("asdsad");
     return context.rewrite("/admin/password");
   }
 };
