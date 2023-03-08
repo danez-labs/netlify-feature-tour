@@ -1,5 +1,0 @@
-/api/* /.netlify/functions/:splat
-
-
-# Optional: Redirect default Netlify subdomain to primary domain
-https://effulgent-marigold-e2475b.netlify.com/* https://tschinder.space/:splat 301!
