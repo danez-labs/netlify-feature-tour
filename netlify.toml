@@ -6,7 +6,7 @@ path = "/hello"
 function = "hello"
 
 [[edge_functions]]
-path = "hello/*"
+path = "/hello/*"
 function = "hello"
 
 [[edge_functions]]
