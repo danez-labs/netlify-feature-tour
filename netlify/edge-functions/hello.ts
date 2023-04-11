@@ -12,5 +12,5 @@ try {
 export default () => new Response("Hello world");
 
 export const config: Config = {
-  path: ["/hello/*", "hello/"],
+  path: ["/hello/*", "/hello"],
 };
