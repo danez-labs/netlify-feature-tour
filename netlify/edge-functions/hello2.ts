@@ -5,15 +5,19 @@ const errorCallback = () => {
   );
 };
 
-globalThis.Deno.cwd = errorCallback;
-globalThis.Deno.readDir = errorCallback;
-globalThis.Deno.readFile = errorCallback;
-globalThis.Deno.readTextFile = errorCallback;
-globalThis.Deno.open = errorCallback;
-globalThis.Deno.stat = errorCallback;
-globalThis.Deno.lstat = errorCallback;
-globalThis.Deno.realPath = errorCallback;
-globalThis.Deno.readLink = errorCallback;
+function patchDenoFS<T>(_denoFSmethod: T): T {
+  return errorCallback as T;
+}
+
+globalThis.Deno.cwd = patchDenoFS(globalThis.Deno.cwd);
+globalThis.Deno.readDir = patchDenoFS(globalThis.Deno.readDir);
+globalThis.Deno.readFile = patchDenoFS(globalThis.Deno.readFile);
+globalThis.Deno.readTextFile = patchDenoFS(globalThis.Deno.readTextFile);
+globalThis.Deno.open = patchDenoFS(globalThis.Deno.open);
+globalThis.Deno.stat = patchDenoFS(globalThis.Deno.stat);
+globalThis.Deno.lstat = patchDenoFS(globalThis.Deno.lstat);
+globalThis.Deno.realPath = patchDenoFS(globalThis.Deno.realPath);
+globalThis.Deno.readLink = patchDenoFS(globalThis.Deno.readLink);
 
 import { Config } from "https://edge.netlify.com";
 import { configAsync } from "https://deno.land/x/dotenv/mod.ts";
