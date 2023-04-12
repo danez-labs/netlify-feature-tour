@@ -1,6 +1,3 @@
-import { Config } from "https://edge.netlify.com";
-import { configAsync } from "https://deno.land/x/dotenv/mod.ts";
-
 const errorCallback = () => {
   throw new Error(
     "Reading or writing files with Edge Functions is not supported yet. " +
@@ -17,6 +14,9 @@ globalThis.Deno.stat = errorCallback;
 globalThis.Deno.lstat = errorCallback;
 globalThis.Deno.realPath = errorCallback;
 globalThis.Deno.readLink = errorCallback;
+
+import { Config } from "https://edge.netlify.com";
+import { configAsync } from "https://deno.land/x/dotenv/mod.ts";
 
 try {
   // when running locally, we need to call this
