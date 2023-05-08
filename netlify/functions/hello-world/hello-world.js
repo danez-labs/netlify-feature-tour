@@ -1,1 +1,1 @@
-export default async (req) => new Response(`Responding to ${req.url}`);
+export default async (req) => new Response(`Respondinga to ${req.url}`);
