@@ -8,7 +8,7 @@ function = "hello"
 [[edge_functions]]
 path = "/hello/*"
 function = "hello"
-excludePattern = "^/hello/no$"
+excludedPattern = "^/hello/no$"
 
 [[edge_functions]]
 path = "/login"
