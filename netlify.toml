@@ -6,9 +6,8 @@ path = "/hello"
 function = "hello"
 
 [[edge_functions]]
-path = "/hello/*"
+pattern = "^/hello/.*$"
 function = "hello"
-excludedPattern = "^/hello/no$"
 excludedPath = "/hello/nort"
 
 [[edge_functions]]
